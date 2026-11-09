@@ -1,0 +1,394 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f1e7;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 0;
+}
+
+/* Navegación */
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fffaf4;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5c3d2e;
+}
+
+.enlaces {
+  display: flex;
+  gap: 20px;
+}
+
+.enlaces a {
+  color: #5c3d2e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Presentación */
+
+header {
+  padding: 30px 20px;
+}
+
+.foto-cafe {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #5c3d2e;
+  font-size: 40px;
+}
+
+h2 {
+  color: #5c3d2e;
+  font-size: 30px;
+}
+
+p {
+  color: #7a6254;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.boton-menu {
+  display: inline-block;
+  background-color: #5c3d2e;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Sobre nosotros */
+
+.nosotros {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Menú */
+
+.menu {
+  padding: 60px 20px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.producto {
+  background: #fffaf4;
+  padding: 25px;
+  border-radius: 18px;
+  width: 220px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+.producto h3 {
+  color: #5c3d2e;
+}
+
+.producto strong {
+  color: #5c3d2e;
+  font-size: 20px;
+}
+
+/* Contacto */
+
+.contacto {
+  background-color: #ead9c5;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.boton-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.boton-whatsapp:hover {
+  background-color: #1da851;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+  .navegacion {
+    flex-direction: column;
+  }
+
+  .enlaces {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .foto-cafe {
+    height: 220px;
+  }
+}
+
+/* NUEVA PALETA AESTHETIC */
+
+body {
+  background-color: #f7f4ec;
+}
+
+.navegacion {
+  background-color: #eae8dd;
+}
+
+.logo,
+.navegacion .logo,
+h1,
+h2,
+.producto h3,
+.producto strong {
+  color: #33382e;
+}
+
+.enlaces a,
+.navegacion .enlaces a {
+  color: #33382e;
+}
+
+p {
+  color: #66705c;
+}
+
+.producto {
+  background-color: #ffffff;
+}
+
+.contacto {
+  background-color: #dccdb8;
+}
+
+.boton-menu {
+  background-color: #78866b;
+  color: white;
+}
+
+.boton-menu:hover {
+  background-color: #59684e;
+}
+
+/* PORTADA AESTHETIC */
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 68px);
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: #33382e;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 19px;
+  color: #66705c;
+  max-width: 550px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+.foto-cafe {
+  max-width: 950px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+@media (max-width: 600px) {
+  .foto-cafe {
+    height: 260px;
+  }
+}
+
+header .etiqueta {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #78866b;
+  margin-bottom: 18px;
+}
+
+/* TARJETAS DEL MENÚ */
+
+.producto {
+  background: #ffffff;
+  border: 1px solid #e8e5dc;
+  border-radius: 22px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 25px rgba(51, 56, 46, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(51, 56, 46, 0.12);
+}
+
+.producto h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.producto strong {
+  color: #78866b;
+}
+
+/* FOTOS DEL MENÚ */
+
+.foto-producto {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* TÍTULO DEL MENÚ AESTHETIC */
+
+.etiqueta-menu {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #78866b;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.menu h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #33382e;
+  margin-top: 0;
+}
+
+/* NAVEGACIÓN AESTHETIC */
+
+.navegacion {
+  background: #ffffff;
+  border: 1px solid #e8e5dc;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(51, 56, 46, 0.04);
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #33382e;
+}
+
+.enlaces a {
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+  color: #78866b;
+}
+
+/* SECCIÓN UBICACIÓN AESTHETIC */
+
+.ubicacion {
+  background-color: #eaede5;
+  padding: 60px 25px;
+  border-radius: 24px;
+  margin: 50px auto;
+  max-width: 950px;
+}
+
+.ubicacion h2 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #33382e;
+}
+
+.ubicacion h3 {
+  color: #59684e;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.ubicacion p {
+  color: #66705c;
+  line-height: 1.8;
+}
+
+/* FOOTER AESTHETIC */
+
+.footer {
+  padding: 45px 20px 25px;
+  margin-top: 60px;
+  border-top: 1px solid #dccdb8;
+  text-align: center;
+}
+
+.footer .footer-logo {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #33382e;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #66705c;
+}
+
+.footer .footer-copy {
+  font-size: 12px;
+  margin-top: 30px;
+  opacity: 0.7;
+}
